@@ -1,4 +1,4 @@
-Followed by  Run Kubernetes clusters for less[https://aws.amazon.com/getting-started/hands-on/amazon-eks-with-spot-instances/?trk=gs_card]
+Followed by  [Run Kubernetes clusters for less](https://aws.amazon.com/getting-started/hands-on/amazon-eks-with-spot-instances/?trk=gs_card)
 
 # Create Cluster
 ```
