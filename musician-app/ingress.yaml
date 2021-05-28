@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: musician-app-ingress
+  labels:
+    app: musician-app
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  rules:
+    - host: "mookky.globish.dev"
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              serviceName: musician-app
+              servicePort: http
